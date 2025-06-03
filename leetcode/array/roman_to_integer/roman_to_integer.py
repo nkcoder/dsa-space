@@ -25,7 +25,7 @@ def roman_to_integer(s: str) -> int:
     return result
 
 
-# use an extra set for substraction
+# use an extra set for subtraction
 def roman_to_integer2(s: str) -> int:
     hash = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     subtraction_set = set(["IV", "IX", "XL", "XC", "CD", "CM"])

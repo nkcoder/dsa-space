@@ -70,8 +70,6 @@ object ReverseString:
       s(i) = stack.pop()
     }
   }
-}
-
 
 
 /** Summary:

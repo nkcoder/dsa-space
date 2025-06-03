@@ -16,7 +16,8 @@ def containsNearbyDuplicate(nums: list[int], k: int) -> bool:
 
     return False
 
+
 if __name__ == "__main__":
-    assert containsNearbyDuplicate([1, 2, 3, 1], 3) == True
-    assert containsNearbyDuplicate([1, 0, 1, 1], 1) == True
-    assert containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2) == False
+    assert containsNearbyDuplicate([1, 2, 3, 1], 3)
+    assert containsNearbyDuplicate([1, 0, 1, 1], 1)
+    assert not containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2)

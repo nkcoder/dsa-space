@@ -11,6 +11,8 @@ def majority_element(nums: list[int]) -> int:
         if v > len(nums) / 2:
             return k
 
+    return -1
+
 
 # Sort the input, then the majority element is at index len/2, T-O(nlogn), O(1)
 def majority_element_sort(nums: list[int]) -> int:
