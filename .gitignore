@@ -1,7 +1,9 @@
-.bsp
-.metals
-.vscode
-.scala-build
+**/.vscode
 
-__pycache__
-.DS_Store
+**/.scala-build
+
+**/__pycache__
+**/.DS_Store
+**/.bsp
+**/.scala-build
+**/.metals
