@@ -2,9 +2,12 @@ package main
 
 import "fmt"
 
-// https://leetcode.com/problems/rotate-array/description/?envType=study-plan-v2&envId=top-interview-150
-// Medium: Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+/*
+ * https://leetcode.com/problems/rotate-array/description/?envType=study-plan-v2&envId=top-interview-150
+ * Medium: Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+ */
 
+// for each number, calculate its new position and place it there
 func rotate(nums []int, k int) {
 	rotated_nums := make([]int, len(nums))
 	for i, v := range nums {
@@ -12,6 +15,25 @@ func rotate(nums []int, k int) {
 		rotated_nums[j] = v
 	}
 	copy(nums, rotated_nums)
+}
+
+// reverse the array in place
+func rotate2(nums []int, k int) {
+	k %= len(nums)
+	if k == 0 {
+		return
+	}
+	reverse(nums, 0, len(nums)-1)
+	reverse(nums, 0, k-1)
+	reverse(nums, k, len(nums)-1)
+}
+
+func reverse(nums []int, start, end int) {
+	for start < end {
+		nums[start], nums[end] = nums[end], nums[start]
+		start++
+		end--
+	}
 }
 
 func main() {
