@@ -1,5 +1,5 @@
 def is_happy(n: int) -> bool:
-    sum_set = set()
+    sum_set: set[int] = set()
     sum = get_square_sum(n)
     while sum != 1:
         sum_set.add(sum)

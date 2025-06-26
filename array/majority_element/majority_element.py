@@ -3,12 +3,12 @@
 
 # Use hash to count each element, T-O(n), S-O(n)
 def majority_element(nums: list[int]) -> int:
-    hash = {}
+    counts: dict[int, int] = {}
     for n in nums:
-        hash[n] = hash.get(n, 0) + 1
+        counts[n] = counts.get(n, 0) + 1
 
-    for k, v in hash.items():
-        if v > len(nums) / 2:
+    for k, v in counts.items():
+        if v > len(nums) // 2:
             return k
 
     return -1

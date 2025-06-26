@@ -2,11 +2,11 @@ from collections import defaultdict
 
 
 def containsNearbyDuplicate(nums: list[int], k: int) -> bool:
-    num_indices = defaultdict(list)
+    num_indices: defaultdict[int, list[int]] = defaultdict(list)
     for i, n in enumerate(nums):
         num_indices[n].append(i)
 
-    for key, value in num_indices.items():
+    for value in num_indices.values():
         if len(value) == 1:
             continue
 
