@@ -1,4 +1,3 @@
-This project contains my LeetCode practice, each challenge might be implemented in different languages (Python, Scala, Java etc.).
+This project contains my LeetCode practice, each challenge might be implemented in different languages (Python, Scala, Java, Go etc.).
 
-This repo is only updated occasionally. 
-
+[LeetCode Top Interview 150](https://leetcode.com/studyplan/top-interview-150/)
