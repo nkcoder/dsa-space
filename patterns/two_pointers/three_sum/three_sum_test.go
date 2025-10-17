@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -18,26 +19,32 @@ func TestThreeSum(t *testing.T) {
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
 			result := threeSum(test.input)
-			if !sliceEqual(result, test.want) {
+			if !slicesEqual(result, test.want) {
 				t.Errorf("Got: %d, want: %d", result, test.want)
 			}
 		})
 	}
 }
 
-func sliceEqual(x, y [][]int) bool {
+func slicesEqual(x, y [][]int) bool {
 	if len(x) != len(y) {
 		return false
 	}
 
-	for i := range x {
-		if len(x[i]) != len(y[i]) {
+	sliceToStr := func(s []int) string {
+		return fmt.Sprint(s)
+	}
+
+	count := make(map[string]int)
+	for _, xm := range x {
+		count[sliceToStr(xm)]++
+	}
+
+	for _, ym := range y {
+		key := sliceToStr(ym)
+		count[key]--
+		if count[key] < 0 {
 			return false
-		}
-		for j := range x[i] {
-			if x[i][j] != y[i][j] {
-				return false
-			}
 		}
 	}
 
