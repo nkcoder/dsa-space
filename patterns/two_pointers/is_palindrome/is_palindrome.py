@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/valid-palindrome/description/
 def is_palindrome(s: str) -> bool:
     str_removed_non_alpha_num: list[str] = []
     for c in s:
