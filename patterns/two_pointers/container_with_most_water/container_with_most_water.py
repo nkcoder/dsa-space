@@ -28,6 +28,4 @@ def container_with_most_water(height: list[int]) -> int:
             j -= 1
 
     return most_water
-            
-        
 
