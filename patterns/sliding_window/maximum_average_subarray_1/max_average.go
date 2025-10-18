@@ -1,6 +1,8 @@
-package main
-
 // https://leetcode.com/problems/maximum-average-subarray-i/description/
+
+// We need to remember the previous sum before sliding the window, so that we can quickly calculate teh current sum.
+// Don't confuse the max and the previous sum.
+package main
 
 func findMaxAverage(nums []int, k int) float64 {
 	max := 0

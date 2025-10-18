@@ -1,12 +1,13 @@
+// https://leetcode.com/problems/3sum/description/
+//
+// Sort + two pointers: the most efficient
+
 package main
 
 import (
 	"slices"
 )
 
-// https://leetcode.com/problems/3sum/description/
-//
-// Sort + two pointers: the most efficient
 func threeSum(nums []int) [][]int {
 	slices.Sort(nums)
 	result := make([][]int, 0)

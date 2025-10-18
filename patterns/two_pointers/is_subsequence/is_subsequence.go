@@ -1,8 +1,8 @@
-package main
-
 // https://leetcode.com/problems/is-subsequence/description/
 
 // Two pointers: can be on the same input, or can have one pointer at each input
+package main
+
 func isSubsequence(s string, t string) bool {
 	if len(s) > len(t) {
 		return false

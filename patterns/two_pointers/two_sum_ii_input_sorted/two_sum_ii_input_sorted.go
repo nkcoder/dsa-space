@@ -1,3 +1,6 @@
+// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+// The input array is sorted, and we need to find pair for sum, using two pointers on the input.
+
 package main
 
 func twoSum2(numbers []int, target int) []int {
