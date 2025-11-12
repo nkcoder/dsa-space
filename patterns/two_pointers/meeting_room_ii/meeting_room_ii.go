@@ -55,7 +55,7 @@ func minMeetingRoomsTwoPointers(intervals []Interval) int {
 
 // Associate the start time slot with 1, and end time slot with -1, then calculate the maximum prefix sum.
 // But if the time values are large, then it will not be memory efficient, for example: [[1000000, 1000005], [1000002, 1000007]]
-func minMeetingRoomsBits(intervals []Interval) int {
+func minMeetingRoomsBuckets(intervals []Interval) int {
 	maxEnd := 0
 	for _, inter := range intervals {
 		maxEnd = max(maxEnd, inter.end)

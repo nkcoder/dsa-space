@@ -1,13 +1,13 @@
 // https://leetcode.com/problems/valid-palindrome/description/
 //
 
-// It works, but runtime is not the best because unicode conversions are expensive.
 package main
 
 import (
 	"unicode"
 )
 
+// It works, but runtime is not the best because unicode conversions are expensive.
 func isPalindrome(s string) bool {
 	i, j := 0, len(s)-1
 	for i < j {

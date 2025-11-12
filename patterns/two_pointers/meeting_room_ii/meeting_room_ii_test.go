@@ -36,7 +36,7 @@ func TestMinMeetingRoomsBits(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
-			result := minMeetingRoomsBits(test.intervals)
+			result := minMeetingRoomsBuckets(test.intervals)
 			if result != test.want {
 				t.Errorf("Got: %d, want: %d", result, test.want)
 			}

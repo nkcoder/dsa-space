@@ -1,6 +1,8 @@
+// Package linkedlistcycle check if there is cycle in a linked list
+package linkedlistcycle
+
 // https://leetcode.com/problems/linked-list-cycle/
 // Fast slow pointers: need to pay attention to the for condition (nil pointer reference)
-package main
 
 type ListNode struct {
 	Val  int
