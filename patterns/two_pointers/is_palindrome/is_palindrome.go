@@ -1,7 +1,5 @@
-// https://leetcode.com/problems/valid-palindrome/description/
-//
-
-package main
+// Package ispalindrome: https://leetcode.com/problems/valid-palindrome/description/
+package ispalindrome
 
 import (
 	"unicode"
@@ -32,6 +30,7 @@ func isPalindrome(s string) bool {
 	return true
 }
 
+// Create custom functions to check alphanum and convert from upper to lower.
 func isPalindromeOptimized(s string) bool {
 	i, j := 0, len(s)-1
 	for i < j {
