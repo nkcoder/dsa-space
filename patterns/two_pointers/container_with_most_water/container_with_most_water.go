@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/container-with-most-water/description/
 
 // Two pointers
-// The area is: the minimum of the heights * the width (distance between hieghts). The key point here is how to move the pointers.
+// The area is: the minimum of the heights * the width (distance between heights). The key point here is how to move the pointers.
 // No matter we move which pointer, the width decreases. The only possible to get a bigger container area is to find a bigger height.
 // So the condition to move the pointer is: always find the bigger height between the left and right pointer.
 package main
