@@ -3,7 +3,6 @@ package findtheduplicatenumber
 import "testing"
 
 func TestFindDuplicate(t *testing.T) {
-
 	testCases := []struct {
 		name  string
 		input []int
@@ -25,7 +24,6 @@ func TestFindDuplicate(t *testing.T) {
 			if result2 != test.want {
 				t.Errorf("Got: %d, want: %d", result2, test.want)
 			}
-
 		})
 	}
 }
