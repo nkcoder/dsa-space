@@ -1,7 +1,8 @@
 ## Template
 
 ```go
-func slidingwindow(nums[] int) {
+// Variable-length sliding window
+func variableLengthSlidingwindow(nums[] int) int {
   state := make(map[int]int) // choose appropriate data structure
   start, total := 0, 0
 
@@ -19,9 +20,35 @@ func slidingwindow(nums[] int) {
     // Invariant: state of current window is valid here
     total = max(total, end - start + 1)
   }
+  total
+}
+```
+
+```go
+// Fix-length sliding window
+func fixedLengthSlidingWindow(nums[] int, k int) {
+  // choose appropriate data structure
+  state := make(map[int]int)
+  start, maxVal := 0, 0
+  for end := 0; end < len(nums); end++ {
+    // extend window
+    // add nums[end] to state in O(1) time
+    
+    // Invariant: size of the window is k 
+    if end-start+1 == k {
+      maxVal = max(maxVal, contents of the state)
+
+      // contract window
+      // remove nums[start] from state in O(1) time
+      start++
+    }
+
+  }
+
 }
 ```
 ```
+
 ```
 
 ## When to use it
