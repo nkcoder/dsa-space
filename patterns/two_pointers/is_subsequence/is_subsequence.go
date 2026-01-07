@@ -4,7 +4,6 @@
 // of the characters without disturbing the relative positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
 // Example 1: Input: s = "abc", t = "ahbgdc", Output: true
 // Example 2: Input: s = "axc", t = "ahbgdc", Output: false
-
 package issubsequence
 
 // Two pointers: each pointer points to one input data
