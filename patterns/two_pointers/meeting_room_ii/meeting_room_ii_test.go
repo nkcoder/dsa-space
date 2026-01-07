@@ -1,4 +1,4 @@
-package meetingroom
+package meetingroomsii
 
 import "testing"
 

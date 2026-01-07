@@ -1,4 +1,4 @@
-// Package meetingroom: https://leetcode.com/problems/meeting-rooms-ii/description/ (needs subscription)
+// Package meetingroomii: https://leetcode.com/problems/meeting-rooms-ii/description/ (needs subscription)
 // https://neetcode.io/problems/meeting-schedule-ii?list=neetcode150
 //
 // Given an array of meeting time interval objects consisting of start and end times
@@ -6,7 +6,7 @@
 // Note: (0,8),(8,10) is not considered a conflict at 8.
 // Example 1: Input: intervals = [(0,40),(5,10),(15,20)], Output: 2
 // Example 2: Input: intervals = [(4,9)] Output: 1
-package meetingroom
+package meetingroomsii
 
 import (
 	"slices"
