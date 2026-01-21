@@ -64,7 +64,8 @@ func nonOverlappingIntervals(intervals []Interval) int {
 	count := 1
 	end := intervals[0].end
 	for i := 1; i < len(intervals); i++ {
-		if intervals[i].start <= end {
+		if intervals[i].start > end {
+			end = intervals[i].end
 			count++
 		}
 	}
