@@ -38,7 +38,7 @@ func mergeIntervals(intervals []Interval) []Interval {
 	merged := make([]Interval, 0)
 
 	for _, interval := range intervals {
-		if len(merged) == 0 || interval.start <= merged[len(merged)-1].end {
+		if len(merged) == 0 || interval.start > merged[len(merged)-1].end {
 			merged = append(merged, interval)
 		} else {
 			merged[len(merged)-1].end = max(merged[len(merged)-1].end, interval.end)
