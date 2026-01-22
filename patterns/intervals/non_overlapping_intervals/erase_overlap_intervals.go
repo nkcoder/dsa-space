@@ -1,5 +1,5 @@
 // Package nonoverlappingintervals: https://leetcode.com/problems/non-overlapping-intervals/submissions/1891971580/
-// https://www.hellointerview.com/learn/code/intervals/overview#non-overlapping-intervals
+// https://www.hellointerview.com/learn/code/intervals/non-overlapping-intervals
 package nonoverlappingintervals
 
 import "slices"
